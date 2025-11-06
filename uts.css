@@ -1,0 +1,243 @@
+/* ——— Maison de Ratu Florist Website ——— */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff6f8;
+  color: #444;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  background: linear-gradient(135deg, #ffd6e0, #ffe9ef);
+  padding: 30px 10px;
+}
+
+header .logo {
+  width: 100px;
+  height: auto;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  color: #d94f84;
+  margin: 10px 0 0;
+}
+
+.tagline {
+  font-style: italic;
+  color: #a55a7a;
+  margin-bottom: 10px;
+}
+
+/* Navigation */
+nav {
+  background-color: #f9d5e5;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+}
+
+nav a {
+  display: block;
+  padding: 12px 20px;
+  color: #7b1e4f;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  background-color: #f4a7b9;
+  color: white;
+  transition: 0.3s;
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffe4ed;
+  min-width: 160px;
+  z-index: 1;
+  border-radius: 8px;
+}
+
+.dropdown-content a {
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Marquee */
+.marquee {
+  background-color: #fddde6;
+  color: #8e3b63;
+  padding: 6px;
+  font-weight: bold;
+}
+
+/* Main Layout */
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Content */
+.content {
+  flex: 3;
+}
+
+article {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+  padding: 20px;
+}
+
+article img {
+  width: 50%;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+article h2 a {
+  color: #b54273;
+  text-decoration: none;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 8px;
+  color: white;
+  background-color: #d94f84;
+  padding: 8px 14px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.readmore {
+  display: inline-block;
+  margin-top: 8px;
+  color: white;
+  background-color: #d94f84;
+  padding: 8px 14px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  background-color: #a63d67;
+}
+
+/* Sidebar */
+.sidebar {
+  flex: 1;
+}
+
+.widget {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.widget h3 {
+  color: #b54273;
+  margin-top: 0;
+}
+
+.widget img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+#clock {
+  font-size: 18px;
+  font-weight: bold;
+  color: #a63d67;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #f9d5e5;
+  padding: 15px;
+  color: #7b1e4f;
+  font-size: 14px;
+}
+
+footer a {
+  color: #a63d67;
+  text-decoration: none;
+}
+
+/* Button */
+button {
+  background-color: #d94f84;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #a63d67;
+  transition: 0.3s;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+  nav ul li {
+    display: block;
+  }
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-box input, .form-box textarea {
+  border: 1px solid #f2b8c6;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.form-box button {
+  align-self: flex-start;
+}
